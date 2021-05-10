@@ -1,0 +1,177 @@
+/* 
+
+=== FoodGo Lab ===
+
+Do not delete existing CSS
+
+*/
+
+/* == Typography == */
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.29rem;
+}
+
+h2 {
+    font-size: 2.14rem;
+}
+
+header,
+footer {
+    color: #b56441;
+}
+
+a {
+    text-decoration: none;
+    color: #b56441;
+    font-size: 1rem;
+}
+
+#legal {
+    font-size: 0.71rem;
+    font-style: italic;
+}
+
+#nav a {
+    margin-right: 0.54rem;
+}
+
+#nav a:hover {
+    color: #7d4700;
+}
+
+#splash {
+    text-align: center;
+    font-size: 3.42rem;
+    line-height: 4.28rem;
+    color: white;
+    text-shadow: 0rem 0rem 0.26rem #6e6e6e;
+}
+
+footer {
+    font-style: italic;
+}
+
+/* Font Awesome icons */
+.fab {
+    font-size: 2.14rem;
+    margin-right: 0.54rem;
+}
+
+.fab:hover {
+    color: white;
+}
+
+button {}
+
+/* == Background == */
+
+
+body {
+    background-color: #fcd303;
+}
+
+main {
+    background-color: #ffdd80;
+}
+
+#splash {
+    background-image: url(splash-backing.jpg);
+}
+
+/* == Box Model == */
+
+body {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+footer {
+    padding: 0.54rem;
+}
+
+header {
+    padding: 1.07rem;
+}
+
+button {
+    border: 0rem;
+    background-color: #b56441;
+    color: #fff;
+    padding: 1.07rem;
+    font-size: 2.14rem;
+    margin-top: 0.8rem;
+}
+
+footer {
+    padding-top: 2.68rem;
+}
+
+#splash {
+    height: 21.43rem;
+}
+
+#app {
+    height: 10.71rem;
+}
+
+/* === Layout  === */
+
+
+/* = Grid =*/
+header,
+footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+#app {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-column: 1/2;
+}
+
+#splash {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-column: 1/2;
+}
+
+/* = Flexbox = */
+
+#app,
+#splash {
+    display: flex;
+}
+
+#app,
+#splash {
+    align-items: center;
+    justify-content: center;
+}
+
+/* = Other = */
+
+* {
+    box-sizing: border-box;
+}
+
+#social-media {
+    text-align: right;
+}
+
+#app {
+    text-align: center;
+}
+#mobile-menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
