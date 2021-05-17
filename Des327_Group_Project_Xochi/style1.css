@@ -129,6 +129,7 @@ nav a:hover {
 nav .current {
     color: #F62C2C;
 }
+
 /* MENU add on */
 .padding{
     margin-left: 1.071rem;  
@@ -158,14 +159,56 @@ nav .current {
     padding-top: 2.5rem;
 }
 /* contact page add on */
-.form{
+.form1{
 	padding-top:10px;
     padding-left: 20px;
     font-family:'Oswald', sans-serif;
-
+    background-color: #dcf0d6;
 	}
 #comments {
     padding-top: 15px;
     width: 530px;
     height: 100px;
+}
+/* check out page */
+#left {
+    width: 40%;
+    text-align: center;
+}
+#right {
+    width: 40%;
+    text-align: center;
+    float: right;
+    background-color: #c7e7db;
+    margin-top: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+#checkout{
+    display:inline-block;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 22px;
+    font-size: 25pt;
+}
+#cart {
+    font-size: 45px;
+    color: white;
+}
+form {
+    background-color: lightslategrey;
+    padding: 25px;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Oswald',sans-serif;
+}
+span {
+    color: #c7e7db;
+}
+#box3 {
+    padding-top: 30px;   
 }
