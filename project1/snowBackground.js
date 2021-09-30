@@ -1,25 +1,41 @@
-let positionX = 600;
-let positionY = 600;
+let positionX = 590;
+let positionY = 590;
 let numberOfShapes = 0;
 let starColor = false;
+let snowMan;
+let song;
+function preload(){
+  snowMan = loadImage("https://victoria7810.github.io/project1/snowman36.png");
+  song = createAudio("https://victoria7810.github.io/project1/owls-christmas-1932.mp3");
+}
 
 function setup() {
   createCanvas(positionX, positionY);
-  background("lightblue");
+    background(157, 232, 242);
   //tree
   noStroke();
-  fill("green");
-  //triangle 1
-  triangle(400, 100, 280, 300, 520, 300);
-  //triangle 2
-  triangle(400, 200, 260, 400, 550, 400);
-  //triangle 3
+  //triangle 4
+  fill(40, 191, 79);
   triangle(400, 250, 240, 500, 560, 500);
-  fill("brown");
+    //triangle 3
+   fill(41, 143, 68);
+  triangle(400, 200, 260, 400, 550, 400);
+    //triangle 2
+    fill(40, 191, 79);
+  triangle(400, 150, 280, 300, 520, 300);
+    fill(41, 143, 68);
+  //triangle 1
+  triangle(400, 100, 300, 230, 500, 230);
+
+  fill(105, 57, 13);
   rect(360, 500, 85, 100);
     //star
-  fill("gray");
+  fill(134, 155, 163);
   star(400, 95, 13, 30, 5);
+  //snowman
+  image(snowMan,-5,320);
+  song.autoplay(true);
+
 }
 
 function draw() {
@@ -70,14 +86,13 @@ function mousePressed() {
 //starColor
 function keyPressed(){
   if(keyCode===UP_ARROW){
-    fill("yellow");
+    fill(247, 247, 25);
     star(400, 95, 13, 30, 5);
-    fill("red");
-    textSize(30);
-    textFont('itcedscr')
-    text("Merry Christmas",70,100);
-    text("and",150,150);
-    text("Happy New Year",70,200);
+    fill(240, 19, 41);
+    textSize(50);
+    textFont('gabriola')
+    text("Merry Christmas",50,100);
+    text("and",135,150);
+    text("Happy New Year",50,200);
   }
 }
-
